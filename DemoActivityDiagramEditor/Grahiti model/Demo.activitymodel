@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.example.demo.activitydiagram.activitydiagram_model:DiagramRootElement xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.example.demo.activitydiagram.activitydiagram_model="http://example.org/demo/activitydiagram_model/activitydiagram">
+  <States xsi:type="org.example.demo.activitydiagram.activitydiagram_model:EndState"/>
+  <States xsi:type="org.example.demo.activitydiagram.activitydiagram_model:ActionState" ActionName="View list of travel destinations"/>
+  <States xsi:type="org.example.demo.activitydiagram.activitydiagram_model:ActionState" ActionName="Book travel"/>
+  <States xsi:type="org.example.demo.activitydiagram.activitydiagram_model:ActionState" ActionName="Compose email and send"/>
+  <States xsi:type="org.example.demo.activitydiagram.activitydiagram_model:DecisionState" DecisionName="Share travel link"/>
+  <States xsi:type="org.example.demo.activitydiagram.activitydiagram_model:StartState"/>
+  <Transitions/>
+  <Transitions/>
+  <Transitions Name="no"/>
+  <Transitions to="//@States.0"/>
+  <Transitions from="//@States.5" to="//@States.1"/>
+  <Transitions from="//@States.1" to="//@States.4"/>
+  <Transitions Name="yes" from="//@States.4" to="//@States.3"/>
+  <Transitions Name="no" from="//@States.4" to="//@States.2"/>
+  <Transitions from="//@States.2" to="//@States.0"/>
+  <Transitions from="//@States.3" to="//@States.0"/>
+</org.example.demo.activitydiagram.activitydiagram_model:DiagramRootElement>
