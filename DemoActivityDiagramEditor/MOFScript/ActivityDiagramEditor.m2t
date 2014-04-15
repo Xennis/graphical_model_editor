@@ -1,0 +1,23 @@
+/**
+ * transformation Demo
+ * date: 15/3/2014
+ * author: null
+ * description: 
+ */
+
+texttransformation Demo (in mdl:"http://example.org/demo/activitydiagram_model/activitydiagram") {
+
+	mdl.DiagramRootElement::main () { //root-class
+    
+		file(self.DiagramTitleBoxes+".activity_diagram"); // write to file from here and down
+			self.States->forEach(ss: mdl.StartState) { //initiating traversal from StartState
+     
+     		println("******************* Start *******************")
+			println("STATE: " + ss.oclGetType() + " " + ss.Name)
+      		self.Transitions->forEach(tr: mdl.Transition){ // traversing all the states reached from StartState
+				println("TRANISTION: name:'" + tr.Name + "', from:" + tr.from.oclGetType() + "('" + tr.from.Name + "'), to:" + tr.to.oclGetType() + "('" + tr.to.Name + "')")
+      	}
+      	println('******************* End *******************')
+    }
+  }
+}

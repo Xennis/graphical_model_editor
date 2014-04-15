@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pi:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms" visible="true" gridUnit="10" diagramTypeId="Myad_editor" name="Demo" snapToGrid="true" pictogramLinks="//@link //@children.0/@link //@children.0/@children.0/@link //@children.1/@link //@children.1/@children.0/@link //@children.1/@children.0/@children.0/@link //@connections.0/@link //@connections.0/@connectionDecorators.0/@link //@connections.0/@connectionDecorators.1/@link //@connections.0/@connectionDecorators.2/@link //@children.2/@link //@children.2/@children.0/@link //@children.2/@children.0/@children.0/@link //@connections.1/@link //@connections.1/@connectionDecorators.0/@link //@connections.1/@connectionDecorators.1/@link //@connections.1/@connectionDecorators.2/@link //@children.3/@link //@children.3/@children.0/@link //@children.3/@children.0/@children.0/@link //@connections.2/@link //@connections.2/@connectionDecorators.0/@link //@connections.2/@connectionDecorators.1/@link //@connections.2/@connectionDecorators.2/@link //@children.4/@link //@children.4/@children.0/@link //@children.4/@children.0/@children.0/@link //@connections.3/@link //@connections.3/@connectionDecorators.0/@link //@connections.3/@connectionDecorators.1/@link //@connections.3/@connectionDecorators.2/@link //@connections.4/@link //@connections.4/@connectionDecorators.0/@link //@connections.4/@connectionDecorators.1/@link //@connections.4/@connectionDecorators.2/@link //@children.5/@link //@children.5/@children.0/@link //@children.5/@children.0/@children.0/@link //@connections.5/@link //@connections.5/@connectionDecorators.0/@link //@connections.5/@connectionDecorators.1/@link //@connections.5/@connectionDecorators.2/@link" version="0.10.0">
+  <properties key="URI" value="platform:/resource/DemoActivityDiagramEditor/Grahiti_model/Demo.activitydiagram_model#/"/>
+  <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
+  <link>
+    <businessObjects href="Demo.activitydiagram_model#/"/>
+  </link>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="ID" value="StartState.containerShape"/>
+    <properties key="L_TYPE" value="FIT"/>
+    <properties key="L_SPACING" value="0"/>
+    <properties key="L_MARGIN" value="0"/>
+    <properties key="L_FLEX" value="true"/>
+    <properties key="L_VIS" value="true"/>
+    <properties key="IS_SHAPE_FROM_DSL" value="true"/>
+    <properties key="current-height-shape" value="40"/>
+    <properties key="current-width-shape" value="40"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="40" height="40" x="310" y="30" style="//@styles.0"/>
+    <link>
+      <businessObjects href="Demo.activitydiagram_model#//@States.0"/>
+    </link>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.0"/>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="ID" value="StartState.shape_1"/>
+      <properties key="IS_COMPARFTMENT" value="false"/>
+      <properties key="CAN_MOVE" value="false"/>
+      <properties key="L_MINW" value="40"/>
+      <properties key="L_MINH" value="40"/>
+      <properties key="L_H_STR" value="false"/>
+      <properties key="L_VIS" value="true"/>
+      <graphicsAlgorithm xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="40" height="40" style="//@styles.0"/>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@States.0"/>
+      </link>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="ID" value="ActionState.containerShape"/>
+    <properties key="L_TYPE" value="FIT"/>
+    <properties key="L_SPACING" value="0"/>
+    <properties key="L_MARGIN" value="0"/>
+    <properties key="L_FLEX" value="true"/>
+    <properties key="L_VIS" value="true"/>
+    <properties key="IS_SHAPE_FROM_DSL" value="true"/>
+    <properties key="current-height-shape" value="50"/>
+    <properties key="current-width-shape" value="120"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="120" height="50" x="270" y="110" style="//@styles.1"/>
+    <link>
+      <businessObjects href="Demo.activitydiagram_model#//@States.1"/>
+    </link>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.1" incomingConnections="//@connections.0"/>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="ID" value="ActionState.shape_1"/>
+      <properties key="L_MINW" value="120"/>
+      <properties key="L_MINH" value="50"/>
+      <properties key="L_H_STR" value="false"/>
+      <properties key="L_VIS" value="true"/>
+      <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" width="120" height="50" style="//@styles.1" cornerHeight="20" cornerWidth="20"/>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@States.1"/>
+      </link>
+      <children visible="true">
+        <properties key="ID" value="ActionState.shape_2"/>
+        <properties key="L_MINW" value="110"/>
+        <properties key="L_MINH" value="50"/>
+        <properties key="L_H_STR" value="false"/>
+        <properties key="L_VIS" value="true"/>
+        <properties key="SHAPEDSL_TEXT_ID" value="ActionStateLabel"/>
+        <graphicsAlgorithm xsi:type="al:MultiText" lineStyle="UNSPECIFIED" width="120" height="60" y="5" style="//@styles.2" horizontalAlignment="ALIGNMENT_CENTER" verticalAlignment="ALIGNMENT_MIDDLE" value="View list of travel destinations">
+          <properties key="SHAPEDSL_TEXT_ID" value="ActionStateLabel"/>
+        </graphicsAlgorithm>
+        <link>
+          <businessObjects href="Demo.activitydiagram_model#//@States.1"/>
+        </link>
+      </children>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="ID" value="DecisionState.containerShape"/>
+    <properties key="L_TYPE" value="FIT"/>
+    <properties key="L_SPACING" value="0"/>
+    <properties key="L_MARGIN" value="0"/>
+    <properties key="L_FLEX" value="true"/>
+    <properties key="L_VIS" value="true"/>
+    <properties key="IS_SHAPE_FROM_DSL" value="true"/>
+    <properties key="current-height-shape" value="71"/>
+    <properties key="current-width-shape" value="121"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="122" height="72" x="269" y="200" style="//@styles.1"/>
+    <link>
+      <businessObjects href="Demo.activitydiagram_model#//@States.2"/>
+    </link>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.2 //@connections.3" incomingConnections="//@connections.1"/>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="ID" value="DecisionState.shape_1"/>
+      <properties key="L_MINW" value="121"/>
+      <properties key="L_MINH" value="91"/>
+      <properties key="L_H_STR" value="false"/>
+      <properties key="L_VIS" value="true"/>
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="122" height="72" style="//@styles.1">
+        <points x="60"/>
+        <points x="121" y="35"/>
+        <points x="60" y="71"/>
+        <points y="35"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@States.2"/>
+      </link>
+      <children visible="true">
+        <properties key="ID" value="DecisionState.shape_2"/>
+        <properties key="L_MINW" value="110"/>
+        <properties key="L_MINH" value="50"/>
+        <properties key="L_H_STR" value="false"/>
+        <properties key="L_VIS" value="true"/>
+        <properties key="SHAPEDSL_TEXT_ID" value="DecisionStateLabel"/>
+        <graphicsAlgorithm xsi:type="al:MultiText" lineStyle="UNSPECIFIED" width="120" height="60" y="28" style="//@styles.5" horizontalAlignment="ALIGNMENT_CENTER" verticalAlignment="ALIGNMENT_MIDDLE" value="Share travel link">
+          <properties key="SHAPEDSL_TEXT_ID" value="DecisionStateLabel"/>
+        </graphicsAlgorithm>
+        <link>
+          <businessObjects href="Demo.activitydiagram_model#//@States.2"/>
+        </link>
+      </children>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="ID" value="EndState.containerShape"/>
+    <properties key="L_TYPE" value="FIT"/>
+    <properties key="L_SPACING" value="0"/>
+    <properties key="L_MARGIN" value="0"/>
+    <properties key="L_FLEX" value="true"/>
+    <properties key="L_VIS" value="true"/>
+    <properties key="IS_SHAPE_FROM_DSL" value="true"/>
+    <properties key="current-height-shape" value="40"/>
+    <properties key="current-width-shape" value="40"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="40" height="40" x="310" y="410" style="//@styles.1"/>
+    <link>
+      <businessObjects href="Demo.activitydiagram_model#//@States.3"/>
+    </link>
+    <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.4 //@connections.5"/>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="ID" value="EndState.shape_1"/>
+      <properties key="IS_COMPARFTMENT" value="false"/>
+      <properties key="CAN_MOVE" value="false"/>
+      <properties key="L_MINW" value="40"/>
+      <properties key="L_MINH" value="40"/>
+      <properties key="L_H_STR" value="false"/>
+      <properties key="L_VIS" value="true"/>
+      <graphicsAlgorithm xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="40" height="40" style="//@styles.1"/>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@States.3"/>
+      </link>
+      <children xsi:type="pi:ContainerShape" visible="true">
+        <properties key="ID" value="EndState.shape_2"/>
+        <properties key="IS_COMPARFTMENT" value="false"/>
+        <properties key="CAN_MOVE" value="false"/>
+        <properties key="L_MINW" value="30"/>
+        <properties key="L_MINH" value="30"/>
+        <properties key="L_H_STR" value="false"/>
+        <properties key="L_VIS" value="true"/>
+        <graphicsAlgorithm xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="30" height="30" x="5" y="5" style="//@styles.7"/>
+        <link>
+          <businessObjects href="Demo.activitydiagram_model#//@States.3"/>
+        </link>
+      </children>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="ID" value="ActionState.containerShape"/>
+    <properties key="L_TYPE" value="FIT"/>
+    <properties key="L_SPACING" value="0"/>
+    <properties key="L_MARGIN" value="0"/>
+    <properties key="L_FLEX" value="true"/>
+    <properties key="L_VIS" value="true"/>
+    <properties key="IS_SHAPE_FROM_DSL" value="true"/>
+    <properties key="current-height-shape" value="50"/>
+    <properties key="current-width-shape" value="120"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="120" height="50" x="490" y="211" style="//@styles.1"/>
+    <link>
+      <businessObjects href="Demo.activitydiagram_model#//@States.4"/>
+    </link>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.4" incomingConnections="//@connections.3"/>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="ID" value="ActionState.shape_1"/>
+      <properties key="L_MINW" value="120"/>
+      <properties key="L_MINH" value="50"/>
+      <properties key="L_H_STR" value="false"/>
+      <properties key="L_VIS" value="true"/>
+      <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" width="120" height="50" style="//@styles.1" cornerHeight="20" cornerWidth="20"/>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@States.4"/>
+      </link>
+      <children visible="true">
+        <properties key="ID" value="ActionState.shape_2"/>
+        <properties key="L_MINW" value="110"/>
+        <properties key="L_MINH" value="50"/>
+        <properties key="L_H_STR" value="false"/>
+        <properties key="L_VIS" value="true"/>
+        <properties key="SHAPEDSL_TEXT_ID" value="ActionStateLabel"/>
+        <graphicsAlgorithm xsi:type="al:MultiText" lineStyle="UNSPECIFIED" width="120" height="60" y="5" style="//@styles.10" horizontalAlignment="ALIGNMENT_CENTER" verticalAlignment="ALIGNMENT_MIDDLE" value="Compose email and send">
+          <properties key="SHAPEDSL_TEXT_ID" value="ActionStateLabel"/>
+        </graphicsAlgorithm>
+        <link>
+          <businessObjects href="Demo.activitydiagram_model#//@States.4"/>
+        </link>
+      </children>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="ID" value="ActionState.containerShape"/>
+    <properties key="L_TYPE" value="FIT"/>
+    <properties key="L_SPACING" value="0"/>
+    <properties key="L_MARGIN" value="0"/>
+    <properties key="L_FLEX" value="true"/>
+    <properties key="L_VIS" value="true"/>
+    <properties key="IS_SHAPE_FROM_DSL" value="true"/>
+    <properties key="current-height-shape" value="50"/>
+    <properties key="current-width-shape" value="120"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="120" height="50" x="270" y="314" style="//@styles.1"/>
+    <link>
+      <businessObjects href="Demo.activitydiagram_model#//@States.5"/>
+    </link>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.5" incomingConnections="//@connections.2"/>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="ID" value="ActionState.shape_1"/>
+      <properties key="L_MINW" value="120"/>
+      <properties key="L_MINH" value="50"/>
+      <properties key="L_H_STR" value="false"/>
+      <properties key="L_VIS" value="true"/>
+      <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" width="120" height="50" style="//@styles.1" cornerHeight="20" cornerWidth="20"/>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@States.5"/>
+      </link>
+      <children visible="true">
+        <properties key="ID" value="ActionState.shape_2"/>
+        <properties key="L_MINW" value="110"/>
+        <properties key="L_MINH" value="50"/>
+        <properties key="L_H_STR" value="false"/>
+        <properties key="L_VIS" value="true"/>
+        <properties key="SHAPEDSL_TEXT_ID" value="ActionStateLabel"/>
+        <graphicsAlgorithm xsi:type="al:MultiText" lineStyle="UNSPECIFIED" width="120" height="60" y="5" style="//@styles.13" horizontalAlignment="ALIGNMENT_CENTER" verticalAlignment="ALIGNMENT_MIDDLE" value="Book travel">
+          <properties key="SHAPEDSL_TEXT_ID" value="ActionStateLabel"/>
+        </graphicsAlgorithm>
+        <link>
+          <businessObjects href="Demo.activitydiagram_model#//@States.5"/>
+        </link>
+      </children>
+    </children>
+  </children>
+  <styles background="//@colors.2" foreground="//@colors.2" lineWidth="1" filled="true" lineVisible="true" transparency="0.0" id="startStateStyle" description="" font="//@fonts.1" stretchH="false" stretchV="false" proportional="false"/>
+  <styles background="//@colors.1" foreground="//@colors.2" lineWidth="1" filled="true" lineVisible="true" transparency="0.0" id="Ad_editorDefaultStyle" description="The default style of the editoractivitydiagram diagram type." font="//@fonts.2" stretchH="false" stretchV="false" proportional="false"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <styles background="//@colors.2" foreground="//@colors.2" lineWidth="1" filled="true" lineVisible="true" transparency="0.0" id="startStateStyle" description="" font="//@fonts.1"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <styles foreground="//@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" id="myFontStyle" description="" font="//@fonts.1"/>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@anchors.0" end="//@children.1/@anchors.0">
+    <properties key="MODEL_TYPE" value="Transition"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="1" filled="false" transparency="0.0" style="//@styles.1"/>
+    <link>
+      <businessObjects href="Demo.activitydiagram_model#//@Transitions.0"/>
+    </link>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="10" style="//@styles.3" verticalAlignment="ALIGNMENT_MIDDLE">
+        <properties key="SHAPEDSL_TEXT_ID" value="TransitionLabel"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.0"/>
+      </link>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" style="//@styles.1">
+        <points/>
+        <points x="-10" y="7"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.0"/>
+      </link>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" style="//@styles.1">
+        <points/>
+        <points x="-10" y="-7"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.0"/>
+      </link>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.1/@anchors.0" end="//@children.2/@anchors.0">
+    <properties key="MODEL_TYPE" value="Transition"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="1" filled="false" transparency="0.0" style="//@styles.1"/>
+    <link>
+      <businessObjects href="Demo.activitydiagram_model#//@Transitions.1"/>
+    </link>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="10" style="//@styles.6" verticalAlignment="ALIGNMENT_MIDDLE">
+        <properties key="SHAPEDSL_TEXT_ID" value="TransitionLabel"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.1"/>
+      </link>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" style="//@styles.1">
+        <points/>
+        <points x="-10" y="7"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.1"/>
+      </link>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" style="//@styles.1">
+        <points/>
+        <points x="-10" y="-7"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.1"/>
+      </link>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.2/@anchors.0" end="//@children.5/@anchors.0">
+    <properties key="MODEL_TYPE" value="Transition"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="1" filled="false" transparency="0.0" style="//@styles.1"/>
+    <link>
+      <businessObjects href="Demo.activitydiagram_model#//@Transitions.2"/>
+    </link>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="10" x="4" y="-22" style="//@styles.8" verticalAlignment="ALIGNMENT_MIDDLE" value="no">
+        <properties key="SHAPEDSL_TEXT_ID" value="TransitionLabel"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.2"/>
+      </link>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" style="//@styles.1">
+        <points/>
+        <points x="-10" y="7"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.2"/>
+      </link>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" style="//@styles.1">
+        <points/>
+        <points x="-10" y="-7"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.2"/>
+      </link>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.2/@anchors.0" end="//@children.4/@anchors.0">
+    <properties key="MODEL_TYPE" value="Transition"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="1" filled="false" transparency="0.0" style="//@styles.1"/>
+    <link>
+      <businessObjects href="Demo.activitydiagram_model#//@Transitions.3"/>
+    </link>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="10" x="-40" y="-25" style="//@styles.11" verticalAlignment="ALIGNMENT_MIDDLE" value="yes">
+        <properties key="SHAPEDSL_TEXT_ID" value="TransitionLabel"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.3"/>
+      </link>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" style="//@styles.1">
+        <points/>
+        <points x="-10" y="7"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.3"/>
+      </link>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" style="//@styles.1">
+        <points/>
+        <points x="-10" y="-7"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.3"/>
+      </link>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.4/@anchors.0" end="//@children.3/@anchors.0">
+    <properties key="MODEL_TYPE" value="Transition"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="1" filled="false" transparency="0.0" style="//@styles.1"/>
+    <link>
+      <businessObjects href="Demo.activitydiagram_model#//@Transitions.4"/>
+    </link>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="10" x="14" y="18" style="//@styles.12" verticalAlignment="ALIGNMENT_MIDDLE">
+        <properties key="SHAPEDSL_TEXT_ID" value="TransitionLabel"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.4"/>
+      </link>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" style="//@styles.1">
+        <points/>
+        <points x="-10" y="7"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.4"/>
+      </link>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" style="//@styles.1">
+        <points/>
+        <points x="-10" y="-7"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.4"/>
+      </link>
+    </connectionDecorators>
+    <bendpoints x="549" y="429"/>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.5/@anchors.0" end="//@children.3/@anchors.0">
+    <properties key="MODEL_TYPE" value="Transition"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="1" filled="false" transparency="0.0" style="//@styles.1"/>
+    <link>
+      <businessObjects href="Demo.activitydiagram_model#//@Transitions.5"/>
+    </link>
+    <connectionDecorators visible="true" active="true" locationRelative="true" location="0.5">
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="10" style="//@styles.14" verticalAlignment="ALIGNMENT_MIDDLE">
+        <properties key="SHAPEDSL_TEXT_ID" value="TransitionLabel"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.5"/>
+      </link>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" style="//@styles.1">
+        <points/>
+        <points x="-10" y="7"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.5"/>
+      </link>
+    </connectionDecorators>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" style="//@styles.1">
+        <points/>
+        <points x="-10" y="-7"/>
+      </graphicsAlgorithm>
+      <link>
+        <businessObjects href="Demo.activitydiagram_model#//@Transitions.5"/>
+      </link>
+    </connectionDecorators>
+  </connections>
+  <colors red="227" green="238" blue="249"/>
+  <colors red="255" green="255" blue="255"/>
+  <colors/>
+  <fonts name="Arial" size="8"/>
+  <fonts name="Arial" size="10"/>
+  <fonts name="Arial" size="11"/>
+</pi:Diagram>
