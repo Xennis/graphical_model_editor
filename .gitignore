@@ -11,4 +11,9 @@ bin/
 ## Custom
 ############
 
-org.example.demo.activitydiagram/src
+
+org.example.demo.activitydiagram/src/
+org.example.demo.activitydiagram.ad_editor/.externalToolBuilders/
+org.example.demo.activitydiagram.ad_editor/shapepreviews/
+org.example.demo.activitydiagram.ad_editor/src/
+org.example.demo.activitydiagram.ad_editor/src-gen/

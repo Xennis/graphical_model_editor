@@ -1,0 +1,114 @@
+/*************************************************************************************
+ *
+ * Spray shapes definition
+ * 
+ * This file contains the definition of graphical figures using the Shapes Language.
+ * Refer to http://code.google.com/a/eclipselabs.org/p/spray/ for documentation.
+ *************************************************************************************/
+
+// Add definition of shapes here.
+// shape RectangleShape {
+//     rectangle {
+//         position(x=0,y=0)
+//         size(width=100,height=100)
+//     }
+// }
+
+// connection ArrowConnection {
+//     placing {
+//         position (offset=1.0)
+//         polygon {
+//             point (x=-10, y=-5)
+//             point (x=0, y=0)
+//             point (x=-10, y=5)
+//             style (background-color=black)
+//         }
+//     }
+// }
+
+//shape DiagramBox {
+//	rectangle {
+//		position(x=0,y=0)
+//		size(width=500, height=600)
+//	}
+//}
+
+shape DiagramTitleBox {
+	rectangle {
+		position(x=0,y=0)
+		size(width=150, height=50)
+		wrapped-text style myFontStyle {
+			size (width=140, height=50)
+			position(x=10, y=30)
+			align(horizontal=center,vertical=middle)
+			id = ModelTitleBoxLabel
+		}
+	}
+}
+
+shape ActionState {
+	rounded-rectangle {
+		position(x=0, y=0)
+		size(width=120, height=50)		
+		curve(width=20, height=20)
+		wrapped-text style myFontStyle {
+			size (width=110, height=50)
+			position(x=0, y=5)
+			align(horizontal=center,vertical=middle)
+			id=ActionStateLabel
+		}
+	}	
+}
+
+shape DecisionState {
+	polygon {
+		point(x=60, y=0)
+		point(x=120, y=45)
+		point(x=60, y=90)
+		point(x=0, y=45)
+		wrapped-text style myFontStyle {
+			size (width=110, height=50)
+			position(x=0, y=35)
+			align(horizontal=center,vertical=middle)
+			id=DecisionStateLabel
+		}
+	}	
+}
+
+shape StartState style startStateStyle {
+	ellipse {
+		position(x=0,y=0)
+		size(width=40, height=40)
+	}
+}
+
+shape EndState {
+	ellipse {
+		position(x=0,y=0)
+		size(width=40, height=40)
+		ellipse style startStateStyle {
+			position(x=5,y=5)
+			size(width=30, height=30)
+		}
+	}
+}
+
+connection Transition {
+	placing {
+		position(offset=0.5,radius=0, angle=90)
+		text style myFontStyle {			
+			size (width=100, height=10)
+			position(x=0, y=0)				
+			align(horizontal=left,vertical=middle)							
+			id = TransitionLabel	
+		}
+	}
+	placing {
+		position(offset=1.0,radius=0,angle=0)
+		line {point(x=0,y=0) point(x=-10,y=7) style (line-width=2)}	
+	}
+	placing {
+		position(offset=1.0,radius=0,angle=0)
+		line {point(x=0,y=0) point(x=-10,y=-7) style (line-width=2)}
+	}
+}

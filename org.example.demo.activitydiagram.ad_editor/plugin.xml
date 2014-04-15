@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!--
+ Generated on Tue Apr 15 17:08:14 CEST 2014 by Spray Plugin.xtend
+ This file will be generated only once if it need to be regenerated, remove this file.
+ 
+-->
+<plugin>
+  
+  <!-- GRAPHITI EDITOR EXTENSION AUTOGEN START -->
+     <!-- Potentially redefine the EDITOR EXTENSION TO ALLOW FOR OUR OWN EDITOR SUBCLASS TO BE USED. 
+<extension
+      point="org.eclipse.ui.editors">
+   <editor
+       class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.diagram.Myad_editorDiagramEditor"
+       contributorClass="org.eclipse.graphiti.ui.editor.DiagramEditorActionBarContributor"
+       default="true"
+       extensions="diagram"
+       icon="icons/diagram.gif"
+       id="org.example.demo.activitydiagram.ad_editor.diagram.Myad_editorDiagramEditor"
+       matchingStrategy="org.eclipse.graphiti.ui.editor.DiagramEditorFactory$DiagramEditorMatchingStrategy"
+       name="%_diagram_editor_name">
+    <contentTypeBinding
+          contentTypeId="org.eclipse.graphiti.content.diagram">
+    </contentTypeBinding>
+   </editor>
+</extension>
+-->
+     <!-- GRAPHITI EDITOR EXTENSION AUTOGEN END -->
+  
+  <extension
+       point="org.eclipse.graphiti.ui.diagramTypes">
+    <!-- DIAGRAM TYPE AUTOGEN START -->
+     <diagramType
+  description="This is the diagram type for the Myad_editor diagram type"
+  id="org.example.demo.activitydiagram.ad_editor.diagram.Myad_editorDiagramType"
+  name="Myad_editor Graphiti Diagram Type"
+  type="Myad_editor">
+</diagramType>
+     <!-- DIAGRAM TYPE AUTOGEN END -->
+  </extension>
+  
+  <extension
+       point="org.eclipse.graphiti.ui.diagramTypeProviders">
+    <!-- DIAGRAM TYPE PROVIDER AUTOGEN START -->
+     <diagramTypeProvider
+  class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.diagram.Myad_editorDiagramTypeProvider"
+  description="This is my editor for the Myad_editor diagram type"
+  id="org.example.demo.activitydiagram.ad_editor.diagram.Myad_editorDiagramTypeProvider"
+  name="Myad_editor editor">
+  <diagramType
+        id="org.example.demo.activitydiagram.ad_editor.diagram.Myad_editorDiagramType">
+  </diagramType>
+    <imageProvider
+           id="org.example.demo.activitydiagram.ad_editor.diagram.Myad_editorImageProvider">
+     </imageProvider>
+</diagramTypeProvider>
+     <!-- DIAGRAM TYPE PROVIDER AUTOGEN END -->
+  </extension>
+  
+  <extension
+       point="org.eclipse.graphiti.ui.imageProviders">
+    <!-- IMAGE PROVIDER AUTOGEN START -->
+     <imageProvider
+      class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.diagram.Myad_editorImageProvider"
+         id="org.example.demo.activitydiagram.ad_editor.diagram.Myad_editorImageProvider">
+</imageProvider>
+     <!-- IMAGE PROVIDER AUTOGEN END -->
+  </extension>
+  
+  <extension
+       point="org.eclipse.ui.views.properties.tabbed.propertyContributor">
+    <propertyContributor contributorId="Myad_editor.PropertyContributor">
+       <propertyCategory category="Myad_editorCategory">
+       </propertyCategory>
+    </propertyContributor>
+  </extension>
+  
+  <extension
+       point="org.eclipse.ui.views.properties.tabbed.propertyTabs">
+    <propertyTabs contributorId="Myad_editor.PropertyContributor">
+      <!-- PROPERTY TAB AUTOGEN START -->
+     <propertyTab label="Main" category="Myad_editorCategory"
+    id="Myad_editor.main.tab">
+</propertyTab>
+     <!-- PROPERTY TAB AUTOGEN END -->
+    </propertyTabs>
+  </extension>
+  
+  <!-- PROPERTY SECTIONS AUTOGEN START -->
+     <extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="Myad_editor.PropertyContributor">
+  <propertySection tab="Myad_editor.main.tab"
+   class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.property.DiagramTitleBoxTitleNameSection"
+   filter="org.example.demo.activitydiagram.ad_editor.property.DiagramTitleBoxFilter"
+   id="Myad_editor.main.tab.DiagramTitleBox.TitleName">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="Myad_editor.PropertyContributor">
+  <propertySection tab="Myad_editor.main.tab"
+   class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.property.ActionStateActionNameSection"
+   filter="org.example.demo.activitydiagram.ad_editor.property.ActionStateFilter"
+   id="Myad_editor.main.tab.ActionState.ActionName">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="Myad_editor.PropertyContributor">
+  <propertySection tab="Myad_editor.main.tab"
+   class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.property.DecisionStateDecisionNameSection"
+   filter="org.example.demo.activitydiagram.ad_editor.property.DecisionStateFilter"
+   id="Myad_editor.main.tab.DecisionState.DecisionName">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="Myad_editor.PropertyContributor">
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="Myad_editor.PropertyContributor">
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="Myad_editor.PropertyContributor">
+  <propertySection tab="Myad_editor.main.tab"
+   class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.property.TransitionNameSection"
+   filter="org.example.demo.activitydiagram.ad_editor.property.TransitionFilter"
+   id="Myad_editor.main.tab.Transition.Name">
+  </propertySection>
+    </propertySections>
+</extension>
+
+     <!-- PROPERTY SECTIONS AUTOGEN END -->
+  
+  <!-- NEW DIAGRAM WIZARD AUTOGEN START -->
+     <extension
+      point="org.eclipse.ui.newWizards">
+      <category
+         name="Myad_editor"
+         id="org.eclipselabs.spray.Myad_editor">
+         </category>
+   <wizard
+         category="org.eclipselabs.spray.Myad_editor"
+         class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.eclipselabs.spray.runtime.graphiti.wizard.NewDiagramWizard"
+         descriptionImage="icons/Myad_editor-32.png"
+         icon="icons/Myad_editor-16.png"
+         id="org.eclipselabs.spray.Myad_editor.NewDiagramWizard"
+         name="New Myad_editor Diagram"
+         preferredPerspectives="org.eclipse.graphiti.examples.common.perspective.GFPerspective"
+         project="false">
+   </wizard>
+</extension>
+     <!-- NEW DIAGRAM WIZARD AUTOGEN END -->
+  
+</plugin>

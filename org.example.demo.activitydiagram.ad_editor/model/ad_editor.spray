@@ -1,0 +1,97 @@
+/*************************************************************************************
+ *
+ * Spray diagram definition
+ * 
+ * This file contains the definition of a graphical editor using the Spray Language.
+ * Refer to http://code.google.com/a/eclipselabs.org/p/spray/ for documentation.
+ *
+ * See also ad_editor.properties to configure generator properties.
+ *************************************************************************************/
+// Add import statements here
+import activitydiagram_model.*
+
+diagram Myad_editor for DiagramRootElement style Ad_editorDefaultStyle
+
+
+// Add class mappings here. Refer to EClasses here. Don't forget to configure a
+// dependency to the plugin defining the EMF metamodel in META-INF/MANIFEST.MF.
+// It is required to have a genmodel for the metamodel.
+//
+// Example class mapping:
+//   class BusinessClass icon "ecore/EClass.gif" {
+//     shape RectangleShape
+//     behavior {
+//       // Enable create feature for this class and add it to the palette "Shapes"
+//       create into types palette "Shapes";
+//     }
+//   }
+//
+// Example association mapping:
+//   class Association icon "connection16.gif" {
+//     connection ArrowConnection {
+//       from source;
+//       to target;
+//     }
+//   }
+
+//class DiagramBox {
+//	shape DiagramBox
+//	behavior {
+//		create into DiagramBoxes "Diagram Box" palette "Diagram"
+//	}
+//}
+
+class DiagramTitleBox {
+	shape DiagramTitleBox {
+		TitleName into ModelTitleBoxLabel
+	}
+	behavior {
+		create into DiagramTitleBoxes "Diagram Title Box" palette "Diagram"
+	}
+}
+
+class ActionState {
+	shape ActionState {
+		ActionName into ActionStateLabel
+	}
+	behavior {
+		create into States "Action" palette "States"
+	}
+}
+
+class DecisionState {
+	shape DecisionState {
+		DecisionName into DecisionStateLabel
+	}
+	behavior {
+		create into States "Decision" palette "States"
+	}
+}
+
+class StartState {
+	shape StartState
+	behavior {
+		create into States "Start" palette "States"
+	}
+}
+
+class EndState {
+	shape EndState 
+	behavior {
+		create into States "End" palette "States"
+	}
+}
+
+class Transition {
+	connection Transition
+	{		
+		Name into TransitionLabel
+	}
+	{
+		from ^from;
+		to ^to;	
+	}
+	behavior {
+		create into Transitions "Transition" palette "Connectors"
+	}
+}
