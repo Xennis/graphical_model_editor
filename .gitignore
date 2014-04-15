@@ -6,3 +6,9 @@
 #.project
 .classpath
 bin/
+
+############
+## Custom
+############
+
+org.example.demo.activitydiagram/src
