@@ -22,11 +22,11 @@ Run the editor
 
 Transform the diagram to text
 * Open the `DemoActivityDiagramEditor\MOFScript\ActivityDiagramEditor.m2t` file
-* Click the run button and choose as `source code model` the 'DemoActivityDiagramEditor/model' folder 
+* Click the run button and choose as `source code model` the ``DemoActivityDiagramEditor/model` folder 
 
 ### Illustration
 
-With the Editor you can create activity diagrams like the following:
+With the editor you can create activity diagrams like the following:
 
 ![Demo_ActivityDiagramEditor](_images/Demo_ActivityDiagramEditor.png)
 
