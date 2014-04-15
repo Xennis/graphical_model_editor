@@ -103,9 +103,9 @@
     point="org.eclipse.ui.views.properties.tabbed.propertySections">
     <propertySections contributorId="Myad_editor.PropertyContributor">
   <propertySection tab="Myad_editor.main.tab"
-   class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.property.ActionStateActionNameSection"
+   class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.property.ActionStateNameSection"
    filter="org.example.demo.activitydiagram.ad_editor.property.ActionStateFilter"
-   id="Myad_editor.main.tab.ActionState.ActionName">
+   id="Myad_editor.main.tab.ActionState.Name">
   </propertySection>
     </propertySections>
 </extension>
@@ -114,9 +114,9 @@
     point="org.eclipse.ui.views.properties.tabbed.propertySections">
     <propertySections contributorId="Myad_editor.PropertyContributor">
   <propertySection tab="Myad_editor.main.tab"
-   class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.property.DecisionStateDecisionNameSection"
+   class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.property.DecisionStateNameSection"
    filter="org.example.demo.activitydiagram.ad_editor.property.DecisionStateFilter"
-   id="Myad_editor.main.tab.DecisionState.DecisionName">
+   id="Myad_editor.main.tab.DecisionState.Name">
   </propertySection>
     </propertySections>
 </extension>
@@ -124,12 +124,22 @@
 <extension
     point="org.eclipse.ui.views.properties.tabbed.propertySections">
     <propertySections contributorId="Myad_editor.PropertyContributor">
+  <propertySection tab="Myad_editor.main.tab"
+   class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.property.StartStateNameSection"
+   filter="org.example.demo.activitydiagram.ad_editor.property.StartStateFilter"
+   id="Myad_editor.main.tab.StartState.Name">
+  </propertySection>
     </propertySections>
 </extension>
 
 <extension
     point="org.eclipse.ui.views.properties.tabbed.propertySections">
     <propertySections contributorId="Myad_editor.PropertyContributor">
+  <propertySection tab="Myad_editor.main.tab"
+   class="org.example.demo.activitydiagram.ad_editor.internal.ExecutableExtensionFactory:org.example.demo.activitydiagram.ad_editor.property.EndStateNameSection"
+   filter="org.example.demo.activitydiagram.ad_editor.property.EndStateFilter"
+   id="Myad_editor.main.tab.EndState.Name">
+  </propertySection>
     </propertySections>
 </extension>
 

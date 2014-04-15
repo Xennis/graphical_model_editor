@@ -15,13 +15,11 @@
   <eClassifiers xsi:type="ecore:EClass" name="DiagramTitleBox">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="TitleName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="State"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DecisionState" eSuperTypes="#//State">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DecisionName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  <eClassifiers xsi:type="ecore:EClass" name="State">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ActionState" eSuperTypes="#//State">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ActionName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DecisionState" eSuperTypes="#//State"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ActionState" eSuperTypes="#//State"/>
   <eClassifiers xsi:type="ecore:EClass" name="StartState" eSuperTypes="#//State"/>
   <eClassifiers xsi:type="ecore:EClass" name="EndState" eSuperTypes="#//State"/>
   <eClassifiers xsi:type="ecore:EClass" name="Transition">

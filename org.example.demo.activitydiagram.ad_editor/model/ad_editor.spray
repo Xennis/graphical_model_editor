@@ -34,13 +34,6 @@ diagram Myad_editor for DiagramRootElement style Ad_editorDefaultStyle
 //     }
 //   }
 
-//class DiagramBox {
-//	shape DiagramBox
-//	behavior {
-//		create into DiagramBoxes "Diagram Box" palette "Diagram"
-//	}
-//}
-
 class DiagramTitleBox {
 	shape DiagramTitleBox {
 		TitleName into ModelTitleBoxLabel
@@ -52,7 +45,7 @@ class DiagramTitleBox {
 
 class ActionState {
 	shape ActionState {
-		ActionName into ActionStateLabel
+		Name into ActionStateLabel
 	}
 	behavior {
 		create into States "Action" palette "States"
@@ -61,7 +54,7 @@ class ActionState {
 
 class DecisionState {
 	shape DecisionState {
-		DecisionName into DecisionStateLabel
+		Name into DecisionStateLabel
 	}
 	behavior {
 		create into States "Decision" palette "States"

@@ -22,9 +22,7 @@ style Ad_editorDefaultStyle {
 
 //Make text appear on a transparent background
 style myFontStyle {
-	background-color = transparent
-	
-	//Make font size 10
+	background-color = transparent	
 	font-size = 10
 }
 

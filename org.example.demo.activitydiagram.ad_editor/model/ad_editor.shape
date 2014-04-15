@@ -26,13 +26,6 @@
 //     }
 // }
 
-//shape DiagramBox {
-//	rectangle {
-//		position(x=0,y=0)
-//		size(width=500, height=600)
-//	}
-//}
-
 shape DiagramTitleBox {
 	rectangle {
 		position(x=0,y=0)
