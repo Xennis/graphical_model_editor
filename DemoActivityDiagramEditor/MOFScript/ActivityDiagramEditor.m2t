@@ -15,7 +15,7 @@ texttransformation Demo (in mdl:"http://example.org/demo/activitydiagram_model/a
      		println("******************* Start *******************")
 			println("STATE: " + ss.oclGetType() + " " + ss.Name)
       		self.Transitions->forEach(tr: mdl.Transition){ // traversing all the states reached from StartState
-				println("TRANISTION: name:'" + tr.Name + "', from:" + tr.from.oclGetType() + "('" + tr.from.Name + "'), to:" + tr.to.oclGetType() + "('" + tr.to.Name + "')")
+				println("TRANSITION: name:'" + tr.Name + "', from:" + tr.from.oclGetType() + "('" + tr.from.Name + "'), to:" + tr.to.oclGetType() + "('" + tr.to.Name + "')")
       	}
       	println('******************* End *******************')
     }

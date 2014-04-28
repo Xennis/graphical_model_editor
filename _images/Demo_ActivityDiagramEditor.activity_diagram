@@ -1,0 +1,9 @@
+******************* Start *******************
+STATE: StartState 
+TRANSITION: name:'', from:StartState(''), to:ActionState('View list of travel destinations')
+TRANSITION: name:'', from:ActionState('View list of travel destinations'), to:DecisionState('Share travel link')
+TRANSITION: name:'no', from:DecisionState('Share travel link'), to:EndState('')
+TRANSITION: name:'yes', from:DecisionState('Share travel link'), to:ActionState('Compose email and send')
+TRANSITION: name:'', from:ActionState('Compose email and send'), to:EndState('')
+TRANSITION: name:'', from:ActionState('Book travel'), to:EndState('')
+******************* End *******************
