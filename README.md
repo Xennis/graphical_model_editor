@@ -1,4 +1,4 @@
-
+# Graphical model editor
 
 ### Used software
 
